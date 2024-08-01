@@ -30,7 +30,7 @@
  <script src="assets/js/app.js"></script>
  <!-- apexchart JavaScript -->
  <script src="assets/js/charts/apexcharts.js"></script>
- <script src="//code.jivosite.com/widget/IN69BNd" async></script>
+ <script src="//code.jivosite.com/widget/FA3rVVDDC9" async></script>
 
  </body>
 
