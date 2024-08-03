@@ -6,7 +6,7 @@ $sqleu = "SELECT * FROM crypto_withdrawal WHERE id='$depoid'";
 $queryeu = mysqli_query($conn, $sqleu);
 $usereu = mysqli_fetch_assoc($queryeu);
 $message = "";
-
+$tranx_id = $usereu['tranx_id'];
 $userid = $usereu['client_id'];
 $sqlSu = "SELECT * FROM users WHERE id='$userid'";
 $querySu = mysqli_query($conn, $sqlSu);
@@ -18,6 +18,9 @@ if(isset($_POST['submit'])){
 
     $sqlup = "UPDATE crypto_withdrawal set status ='$status' WHERE id='$depoid'";
     $queryup = mysqli_query($conn,$sqlup);
+    $sqluphi = "UPDATE history set status ='$status' WHERE tranx_id='$tranx_id'";
+    $queryuphi = mysqli_query($conn,$sqluphi);
+
 
     if($status == "completed"){
         if($usereu['coin'] == "BTC"){
