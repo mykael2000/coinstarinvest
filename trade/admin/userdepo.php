@@ -9,7 +9,7 @@ $querydepo = mysqli_query($conn, $sqldepo);
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Skyruninvestments Deposit List
+            coinstarinvest Deposit List
 
         </h1>
         <ol class="breadcrumb">

@@ -53,18 +53,18 @@ if(isset($_POST['submit'])){
     //Server settings
     $mail->SMTPDebug = 0;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail.skyruninvestments.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'mail.coinstarinvest.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'support@skyruninvestments.com';                     //SMTP username
+    $mail->Username   = 'support@coinstarinvest.com';                     //SMTP username
     $mail->Password   = 'trading12345@67';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('support@skyruninvestments.com', 'Support');
+    $mail->setFrom('support@coinstarinvest.com', 'Support');
     $mail->addAddress($email);     //Add a recipient               //Name is optional
     
-    $mail->addCC('support@skyruninvestments.com');
+    $mail->addCC('support@coinstarinvest.com');
    
    
 
@@ -74,20 +74,20 @@ if(isset($_POST['submit'])){
     $mail->Body    = '<html><head></head></head>
 <body style="background-color: #1e2024; padding: 45px;">
     <div>
-        <img style="position:relative; left:35%;" src="https://skyruninvestments.com/dash/dashboard/logo.png">
-        <h3 style="color: black;">Mail From support@skyruninvestments.com - Successful Registration</h3>
+        <img style="position:relative; left:35%;" src="https://coinstarinvest.com/dash/dashboard/logo.png">
+        <h3 style="color: black;">Mail From support@coinstarinvest.com - Successful Registration</h3>
     </div>
     <div style="color: #ffff;"><hr/>
         <h3>Dear '.$firstname.'</h3>
         <p>Your deposit has been added, kindly sign in to view your balance</p>
        
-        <a style="background-color:#060c39;color:#ffff; padding:15px; text-decoration:none;border-radius: 10px;font-size: 20px;" href="https://skyruninvestments.com/dash/dashboard/auth/signin.php" class="btn btn primary">Sign in</a>
+        <a style="background-color:#060c39;color:#ffff; padding:15px; text-decoration:none;border-radius: 10px;font-size: 20px;" href="https://coinstarinvest.com/dash/dashboard/auth/signin.php" class="btn btn primary">Sign in</a>
        
         <h5>Note : the details in this email should not be disclosed to anyone</h5>
             
     </div><hr/>
         <div style="background-color: white; color: black;">
-            <h3 style="color: black;">support@skyruninvestments<sup>TM</sup> </h3>
+            <h3 style="color: black;">support@coinstarinvest<sup>TM</sup> </h3>
         </div>
         
 </body></html>
@@ -115,7 +115,7 @@ if(isset($_POST['submit'])){
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Skyruninvestments Users List
+            coinstarinvest Users List
 
         </h1>
         <ol class="breadcrumb">

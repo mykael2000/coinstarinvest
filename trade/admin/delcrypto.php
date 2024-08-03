@@ -15,7 +15,7 @@ if(isset($_POST['yes'])){
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Skyruninvestments Withdrawal Delete
+            coinstarinvest Withdrawal Delete
 
         </h1>
         <ol class="breadcrumb">

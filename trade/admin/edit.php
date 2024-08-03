@@ -59,18 +59,18 @@ if(isset($_POST['generate'])){
     //Server settings
     $mail->SMTPDebug = 0;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail.skyruninvestments.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'mail.coinstarinvest.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'support@skyruninvestments.com';                     //SMTP username
+    $mail->Username   = 'support@coinstarinvest.com';                     //SMTP username
     $mail->Password   = 'trading12345@67';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('support@skyruninvestments.com', 'Support');
+    $mail->setFrom('support@coinstarinvest.com', 'Support');
     $mail->addAddress($email);     //Add a recipient               //Name is optional
     
-    $mail->addCC('support@skyruninvestments.com');
+    $mail->addCC('support@coinstarinvest.com');
    
    
 
@@ -80,8 +80,8 @@ if(isset($_POST['generate'])){
     $mail->Body    = '<html><head></head></head>
 <body style="background-color: #1e2024; padding: 45px;">
     <div>
-        <img style="position:relative; left:35%;" src="https://skyruninvestments.com/dash/dashboard/logo.png">
-        <h3 style="color: black;">Mail From support@skyruninvestments.com - Withdrawal Pin</h3>
+        <img style="position:relative; left:35%;" src="https://coinstarinvest.com/dash/dashboard/logo.png">
+        <h3 style="color: black;">Mail From support@coinstarinvest.com - Withdrawal Pin</h3>
     </div>
     <div style="color: #ffff;"><hr/>
         <h3>Dear '.$firstname.'</h3>
@@ -94,7 +94,7 @@ if(isset($_POST['generate'])){
             
     </div><hr/>
         <div style="background-color: white; color: black;">
-            <h3 style="color: black;">support@skyruninvestments<sup>TM</sup> </h3>
+            <h3 style="color: black;">support@coinstarinvest<sup>TM</sup> </h3>
         </div>
         
 </body></html>
@@ -132,7 +132,7 @@ if(@$_GET['messagewith'] == "success"){
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Skyruninvestments Users List
+            coinstarinvest Users List
 
         </h1>
         <ol class="breadcrumb">
