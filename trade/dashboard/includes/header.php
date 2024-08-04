@@ -129,7 +129,7 @@ $user_email = $row['email'];
     <!-- TradingView Widget END -->
     <aside class="sidebar sidebar-default navs-rounded">
         <div class="sidebar-header d-flex align-items-center justify-content-start">
-            <a href="https://coinstarinvest.com"
+            <a href="main.php"
                 class="navbar-brand dis-none align-items-center justify-content-center">
                 <img height="100%" width="100%" src="logo.png">
             </a>
